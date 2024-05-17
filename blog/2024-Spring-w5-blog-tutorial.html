@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>2024 Spring 課程w3</title>
+  <title>2024 Spring 課程w5</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -40,7 +40,7 @@
   <![endif]-->
 
 
-    <link href="./2024-Spring-w3-blog-tutorial.html" rel="canonical" />
+    <link href="./2024-Spring-w5-blog-tutorial.html" rel="canonical" />
 
         <meta name="description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引.">
 
@@ -54,15 +54,15 @@
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="協同產品設計實習"/>
-<meta property="og:title" content="2024 Spring 課程w3"/>
+<meta property="og:title" content="2024 Spring 課程w5"/>
 <meta property="og:description" content="2024 Spring 網際內容管理與協同產品設計實習課程教學導引."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./2024-Spring-w3-blog-tutorial.html"/>
+<meta property="og:url" content="./2024-Spring-w5-blog-tutorial.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2024-03-09 11:00:00+08:00"/>
-<meta property="article:modified_time" content="2024-05-17 06:02:47.816185+08:00"/>
+<meta property="article:published_time" content="2024-03-23 11:00:00+08:00"/>
+<meta property="article:modified_time" content="2024-05-17 07:25:50.731596+08:00"/>
 <meta property="article:author" content="./author/41023249.html">
-<meta property="article:section" content="w3"/>
+<meta property="article:section" content="w5"/>
 <meta property="article:tag" content="網誌編寫"/>
 <meta property="article:tag" content="pelican"/>
 <meta property="og:image" content="./theme/images/post-bg.jpg">
@@ -73,17 +73,17 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "2024 Spring 課程w3",
-  "headline": "2024 Spring 課程w3",
-  "datePublished": "2024-03-09 11:00:00+08:00",
-  "dateModified": "2024-05-17 06:02:47.816185+08:00",
+  "name": "2024 Spring 課程w5",
+  "headline": "2024 Spring 課程w5",
+  "datePublished": "2024-03-23 11:00:00+08:00",
+  "dateModified": "2024-05-17 07:25:50.731596+08:00",
   "author": {
     "@type": "Person",
     "name": "41023249",
     "url": "./author/41023249.html"
   },
   "image": "./theme/images/post-bg.jpg",
-  "url": "./2024-Spring-w3-blog-tutorial.html",
+  "url": "./2024-Spring-w5-blog-tutorial.html",
   "description": "2024 Spring 網際內容管理與協同產品設計實習課程教學導引."
 }
 </script>
@@ -206,11 +206,11 @@ init_mathjax();
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">2024 Spring 課程w3</h1>
+        <h1 class="post-title">2024 Spring 課程w5</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="./author/41023249.html">41023249</a>
-            | <time datetime="Sat 09 March 2024">Sat 09 March 2024</time>
+            | <time datetime="Sat 23 March 2024">Sat 23 March 2024</time>
         </span>
         <!-- TODO : Modified check -->
             <span class="post-meta"> | Updated on Fri 17 May 2024</span>
@@ -235,181 +235,216 @@ init_mathjax();
             <section class="post-content">
                 <p>2024 Spring 網際內容管理與協同產品設計實習課程教學導引.</p>
 
-<h3>第三週協同產品設計實習大綱</h3>
-<h4>1. 善用 GitHub Codespaces 與 Gitpod</h4>
-<ul>
-<li><strong>介紹 GitHub Codespaces</strong></li>
-<li>每月 120 core hours 免費使用</li>
-<li>建議僅在需要轉檔或編輯時啟用，以最佳化使用</li>
-<li><strong>介紹 Gitpod</strong></li>
-<li>與 GitHub Codespaces 類似，使用 Visual Studio Code 網頁介面</li>
-<li>運行個人 cd2024 倉儲的設定</li>
-<li>分組倉儲的 SSH 設定與維護</li>
-</ul>
-<h4>2. 將組員倉儲設為分組倉儲的子模組</h4>
-<ul>
-<li><strong>設定子模組的指令</strong></li>
-<li>在分組倉儲目錄下執行 <code>git submodule add 組員的個人倉儲網址 組員的學號</code></li>
-<li>範例: <code>git submodule add https://github.com/scrum-1/cd2024.git 41023249</code></li>
-<li><strong>子模組的優點</strong></li>
-<li>組員自行管理個人倉儲</li>
-<li>自行決定整合版本</li>
-<li>簡化資料導入分組網站的過程</li>
-</ul>
-<h4>3. LaTeX 轉 PDF 機制</h4>
-<ul>
-<li><strong>LaTeX 文件編輯與轉檔</strong></li>
-<li>利用 xelatex.exe 編譯 .tex 文件</li>
-<li>生成 .pdf 文件</li>
-<li><strong>範例與教學影片</strong></li>
-<li>示範如何在 Windows 環境下編譯 LaTeX 文件</li>
-<li>解決編譯過程中的常見問題</li>
-<li><strong>使用 GitHub Actions 進行自動轉檔</strong></li>
-<li>.github/workflows/main.yml 設定範例</li>
-<li>轉檔目錄結構：latex 目錄與 downloads 目錄</li>
-</ul>
-<h4>4. 啟動期中分組報告的製作</h4>
-<ul>
-<li><strong>分工翻譯與編輯報告</strong></li>
-<li>以 LaTeX 格式分工完成英文與中文翻譯</li>
-<li>在分組網站的 Release 或 downloads 區發布報告</li>
-<li><strong>協同編輯與衝突解決</strong></li>
-<li>.tex 文件的純文字編輯</li>
-<li>多人協同編輯時的衝突解決</li>
-</ul>
-<h4>5. 使用 Replit 維護分組倉儲</h4>
-<ul>
-<li><strong>Replit 環境介紹</strong></li>
-<li>基本操作與維護方法</li>
-<li>.ssh 目錄的管理</li>
-</ul>
-<h4>6. CD2024 期中分組倉儲與網站</h4>
-<ul>
-<li><strong>建立分組網站與倉儲</strong></li>
-<li>使用 Brython 程式語法生成連結內容</li>
-<li>範例程式碼提供</li>
-<li><strong>Brython 程式碼示範</strong></li>
-<li>自動生成分組網站與倉儲的連結</li>
-</ul>
-<h4>7. 期中分組報告範本</h4>
-<ul>
-<li><strong>LaTeX 報告範本</strong></li>
-<li>下載與使用說明</li>
-<li>miktex-portable.7z 與 latex_images_github.7z 下載</li>
-</ul>
-<h4>8. 在電腦教室中的協同設計</h4>
-<ul>
-<li><strong>各組員維護個人與分組倉儲</strong></li>
-<li>利用 Token 或 SSH 授權</li>
-<li>git clone 指令範例</li>
-</ul>
-<h4>9. 其他工具與參考資料</h4>
-<ul>
-<li><strong>OnShape 帳號與 MKCad Library 使用</strong></li>
-<li>網頁設計與產品建模</li>
-<li><strong>CoppeliaSim</strong></li>
-<li>下載與使用說明</li>
-<li>結合可攜程式環境進行機電系統設計與模擬</li>
-</ul>
-<h4>10. 相關連結與資料</h4>
-<ul>
-<li><strong>參考資料</strong></li>
-<li>Odoo PLM 功能與使用介紹</li>
-<li>英文單字查詢工具</li>
-<li>GitHub Actions 配置範例</li>
-<li><strong>完整範例文件與資源</strong></li>
-<li>可攜程式環境下載</li>
-<li>協同報告範本下載</li>
-</ul>
-<h3>詳細說明</h3>
-<h4>善用 GitHub Codespaces 與 Gitpod</h4>
-<ul>
-<li><strong>介紹 GitHub Codespaces</strong></li>
-<li>GitHub Codespaces 是一個雲端開發環境，允許開發者在瀏覽器中編寫、測試和調試代碼。</li>
-<li>每月 120 core hours 的免費配額允許用戶高效利用資源。</li>
+<h3>協同產品設計實習第五週詳細大綱</h3>
+<hr>
+<h4>一、教學內容</h4>
+<ol>
+<li><strong>先前影片整理</strong></li>
+<li>搜尋已發布的教學影片</li>
+<li>製作字幕並上傳嵌入網站</li>
+<li>整理逐字稿並上傳 .txt 連結</li>
+<li>撰寫教學影片的摘要</li>
 <li>
-<p>使用策略：僅在需要進行文件轉檔或進行大量編輯時啟用，其他時候使用本地編輯工具。</p>
+<p>相關教學影片列表：</p>
+<ul>
+<li>cd2024 2a 1 blog setup 1</li>
+<li>cd2024 2a 2 odoo plm簡介 2</li>
+<li>cd2024 2a w2 3 如何建立各組的 Team midag1 並利用 Codespaces 維護內容 3</li>
+<li>cd2024 2a w2 4 利用 Replit 管理 Github Classroom 分組倉儲 4</li>
+<li>cd2024 2a w2 5 如何利用近端可攜環境與外部 IPv4 開啟動態網站 5</li>
+<li>cd2024 2a w3 如何將學員倉儲設為分組倉儲的子模組 6</li>
+<li>cd2024 2a w3 利用分組協同建立 LaTeX 報告 7</li>
+</ul>
 </li>
 <li>
-<p><strong>介紹 Gitpod</strong></p>
+<p><strong>分組網誌的統整</strong></p>
 </li>
-<li>Gitpod 是類似於 GitHub Codespaces 的工具，使用 Visual Studio Code 的網頁介面。</li>
-<li>用於管理和編輯個人的 cd2024 倉儲。</li>
-<li>分組倉儲需設置 SSH 許可權來進行管理。</li>
-</ul>
-<h4>將組員倉儲設為分組倉儲的子模組</h4>
-<ul>
-<li><strong>設定子模組的指令</strong></li>
-<li>在分組倉儲的根目錄中，運行以下命令來添加子模組：
-    <code>sh
-    git submodule add &lt;組員的個人倉儲網址&gt; &lt;組員的學號&gt;</code></li>
-<li>例如：
-    <code>sh
-    git submodule add https://github.com/scrum-1/cd2024.git 41023249</code></li>
-<li><strong>子模組的優點</strong></li>
-<li>各組員可以自行管理和更新個人倉儲，無需同步到分組倉儲。</li>
-<li>子模組的獨立性讓組員可以單獨測試和修改自己的代碼。</li>
-<li>簡化資料的整合過程，只需更新子模組即可同步最新內容。</li>
-</ul>
-<h4>LaTeX 轉 PDF 機制</h4>
-<ul>
-<li><strong>LaTeX 文件編輯與轉檔</strong></li>
-<li>LaTeX 是一個基於 TeX 的排版系統，適用於專業文檔和學術論文的編輯。</li>
-<li>在 Windows 環境中，使用 MiKTeX 編譯 LaTeX 文件，生成 PDF 報告。</li>
-<li>主要步驟包括編輯 <code>.tex</code> 文件，然後使用 <code>xelatex.exe</code> 進行編譯：
-    <code>sh
-    xelatex &lt;filename&gt;.tex</code></li>
-<li><strong>範例與教學影片</strong></li>
-<li>教學影片詳細說明如何下載、安裝和使用 MiKTeX。</li>
-<li>解決常見的編譯錯誤和問題。</li>
-<li><strong>使用 GitHub Actions 進行自動轉檔</strong></li>
-<li>配置 GitHub Actions 來自動化 LaTeX 文件的編譯和 PDF 生成。</li>
-<li>範例配置文件 <code>.github/workflows/main.yml</code> 可參考：
-    <code>yaml
-    name: LaTeX Build
-    on: [push]
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: Setup LaTeX
-          run: sudo apt-get install -y texlive-full
-        - name: Compile LaTeX
-          run: xelatex main.tex</code></li>
-</ul>
-<h4>啟動期中分組報告的製作</h4>
-<ul>
-<li><strong>分工翻譯與編輯報告</strong></li>
-<li>組員分工完成英文和中文的翻譯與編輯。</li>
-<li>使用 LaTeX 格式撰寫報告，最終生成 PDF 文件。</li>
-<li><strong>協同編輯與衝突解決</strong></li>
-<li>.tex 文件的純文字格式有助於版本控制和衝突解決。</li>
-<li>在 Git 中協同編輯時，可以清楚地看到和解決衝突。</li>
-</ul>
-<h4>使用 Replit 維護分組倉儲</h4>
-<ul>
-<li><strong>Replit 環境介紹</strong></li>
-<li>Replit 是一個在線開發環境，支持多種編程語言和框架。</li>
-<li>可以方便地在瀏覽器中編輯和運行代碼。</li>
-<li>免費帳號的 .ssh 目錄管理和維護需要注意。</li>
-</ul>
-<h4>CD2024 期中分組倉儲與網站</h4>
-<ul>
-<li><strong>建立分組網站與倉儲</strong></li>
-<li>使用 Brython 程式語法生成期中分組倉儲和網站的連結。</li>
-<li>範例程式碼展示如何自動生成連結列表。</li>
-<li><strong>範例程式碼</strong>：
-    ```python
-    from browser import document, html
-    brython_div = document["brython_div1"]
-    div = "a"
-    org = "mdecd2024"
-    midterm = "mid" + div + "g"
-    group_num = 8
-    for i in range(1,group_num+1):
-        site_url = "https://" + org + ".github.io/</li>
-</ul>
+<li>修改 pelicanconf.py 文件</li>
+<li>利用 Pelican 設定 PATH 與 OUTPUT_PATH 變數</li>
+<li>動態複製 .md 檔案到分組倉儲中的 combined_directory</li>
+<li>避開分組倉儲與學員子模組倉儲中的 pages 目錄下的 .md 檔案</li>
+<li>網誌轉檔指令：<code>pelican -s local_publishconf.py</code></li>
+<li>組員命</li>
+</ol>
+<p>名規則：
+     - 每個網誌 .md 檔案名稱需加上前綴字串，如 "學號_" 加上唯一的網誌 Slug 字串名稱
+     - Category 使用該組員的學號作為標示</p>
+<ol>
+<li><strong>NX 零組件繪圖</strong></li>
+<li>使用 NX1872 協同繪製零組件</li>
+<li>從電腦輔助設計室取得 NX 套件目錄檔案</li>
+<li>使用 start_USB_nx1872.bat 啟動 NX</li>
+<li>不同版本 NX 的協同設計操作</li>
+</ol>
+<h4>二、影片整理具體步驟</h4>
+<ol>
+<li><strong>添加字幕</strong></li>
+<li>使用軟體（如 Aegisub）為教學影片添加字幕</li>
+<li>
+<p>上傳帶有字幕的影片到可以嵌入各分組網站的平台（如 YouTube）</p>
+</li>
+<li>
+<p><strong>整理逐字稿</strong></p>
+</li>
+<li>根據字幕內容整理出逐字稿</li>
+<li>
+<p>以 .txt 文件形式上傳到影片下方，並提供下載連結</p>
+</li>
+<li>
+<p><strong>撰寫摘要</strong></p>
+</li>
+<li>為每個教學影片撰寫教學重點摘要</li>
+<li>將摘要內容放置在影片嵌入部分的下方</li>
+</ol>
+<h4>三、分組網誌統整步驟</h4>
+<ol>
+<li><strong>修改 pelicanconf.py</strong></li>
+<li>設定 PATH 與 OUTPUT_PATH 變數</li>
+<li>
+<p>動態複製子模組中的 .md 文件到分組倉儲中的 combined_directory</p>
+</li>
+<li>
+<p><strong>網誌轉檔</strong></p>
+</li>
+<li>
+<p>使用 <code>pelican -s local_publishconf.py</code> 進行網誌轉檔</p>
+</li>
+<li>
+<p><strong>命名規則</strong></p>
+</li>
+<li>組員的網誌 .md 文件需加上前綴字串（如 "學號_"）</li>
+<li>使用學號作為 Category 標示</li>
+</ol>
+<h4>四、NX 零組件繪圖</h4>
+<ol>
+<li><strong>安裝與啟動</strong></li>
+<li>將 NX1872 目錄存入隨身碟</li>
+<li>
+<p>使用 start_USB_nx1872.bat 啟動 NX</p>
+</li>
+<li>
+<p><strong>協同設計</strong></p>
+</li>
+<li>設置 temp 目錄用來儲存 NX 的 Syslog 系統狀態檔案</li>
+<li>配置批次檔案啟動 NX</li>
+</ol>
+<h4>五、ODOO PLM 論文中英並列任務</h4>
+<ol>
+<li><strong>任務說明</strong></li>
+<li>各組員在個人 cd2024 倉儲中以 LaTeX 格式翻譯並列中英文資料</li>
+<li>
+<p>最後在分組網站的 Release 或 downloads 區製作 2a-midagx_report.pdf</p>
+</li>
+<li>
+<p><strong>資源</strong></p>
+</li>
+<li>
+<p>下載 miktex-portable.7z 和 latex_images_github.7z</p>
+</li>
+<li>
+<p><strong>文章內容</strong></p>
+</li>
+<li>
+<p>2021 ANALYSIS OF THE ODOO SOFTWARE CAPABILITIES REGARDING PRODUCT LIFECYCLE MANAGEMENT, MANUFACTURING EXECUTION SYSTEMS AND THEIR INTEGRATION.pdf</p>
+</li>
+<li>
+<p><strong>英文單字查詢</strong></p>
+</li>
+<li>使用 2021_odoo_reading.html 進行查詢</li>
+</ol>
+<h4>六、倉儲權限管理</h4>
+<ol>
+<li><strong>Replit SSH 設定</strong></li>
+<li>在 Replit 中設置 SSH 以管理分組倉儲的權限</li>
+</ol>
+<h4>七、Sourcetree 使用</h4>
+<ol>
+<li><strong>功能介紹</strong></li>
+<li>利用 Sourcetree 管理倉儲提交內容</li>
+<li>查看歷次提交歷史</li>
+<li>回復到先前版本</li>
+</ol>
+<hr>
+<h3>實施細節與步驟</h3>
+<h4>一、先前影片整理</h4>
+<ol>
+<li><strong>字幕添加與上傳</strong></li>
+<li>使用字幕軟件（如 Aegisub）添加字幕</li>
+<li>
+<p>上傳到 YouTube 或其他可嵌入的平台</p>
+</li>
+<li>
+<p><strong>逐字稿整理</strong></p>
+</li>
+<li>從字幕文件中提取逐字稿</li>
+<li>
+<p>生成 .txt 文件並上傳</p>
+</li>
+<li>
+<p><strong>摘要撰寫</strong></p>
+</li>
+<li>撰寫每個教學影片的摘要</li>
+<li>將摘要放置在影片嵌入下方</li>
+</ol>
+<h4>二、分組網誌統整</h4>
+<ol>
+<li><strong>修改 pelicanconf.py</strong></li>
+<li>設定 PATH 與 OUTPUT_PATH 變數</li>
+<li>
+<p>動態複製子模組 .md 文件到 combined_directory</p>
+</li>
+<li>
+<p><strong>轉檔操作</strong></p>
+</li>
+<li>
+<p>執行 <code>pelican -s local_publishconf.py</code></p>
+</li>
+<li>
+<p><strong>命名與分類</strong></p>
+</li>
+<li>網誌文件前綴為 "學號_"</li>
+<li>Category 使用學號標示</li>
+</ol>
+<h4>三、NX 繪圖</h4>
+<ol>
+<li><strong>啟動 NX</strong></li>
+<li>
+<p>使用 start_USB_nx1872.bat 啟動 USB 中的 NX1872</p>
+</li>
+<li>
+<p><strong>設置 temp 目錄</strong></p>
+</li>
+<li>在 NX1872 目錄中新增 temp 目錄</li>
+</ol>
+<h4>四、ODOO PLM 論文翻譯</h4>
+<ol>
+<li><strong>分工翻譯</strong></li>
+<li>
+<p>各組員在個人倉儲中完成分工翻譯</p>
+</li>
+<li>
+<p><strong>LaTeX 編譯</strong></p>
+</li>
+<li>
+<p>使用 miktex-portable 編譯 LaTeX 報告</p>
+</li>
+<li>
+<p><strong>生成 PDF</strong></p>
+</li>
+<li>將最終報告生成 2a-midagx_report.pdf</li>
+</ol>
+<h4>五、Replit SSH 設定</h4>
+<ol>
+<li><strong>SSH 設置</strong></li>
+<li>在 Replit 中配置 SSH 管理分組倉儲</li>
+</ol>
+<h4>六、Sourcetree 使用</h4>
+<ol>
+<li><strong>提交與回復</strong></li>
+<li>查看歷史提交</li>
+<li>回復到任一版本</li>
+</ol>
+<hr>
             </section>
 
             <section class="post-info">
@@ -423,17 +458,10 @@ init_mathjax();
 
 
                 <aside class="post-nav">
-                    <a class="post-nav-next" href="./2024-Spring-w4-blog-tutorial.html">
-                        <section class="post-nav-teaser">
-                            <i class="ic ic-arrow-left"></i>
-                                <h2 class="post-nav-title">2024 Spring 課程w4</h2>
-                            <p class="post-nav-excerpt">2024 Spring 網際內容管理與協同產品設計實習課程教學導引.</p>
-                        </section>
-                    </a>
-                    <a class="post-nav-prev" href="./2024-Spring-w2-2-blog-tutorial.html">
+                    <a class="post-nav-prev" href="./2024-Spring-w4-blog-tutorial.html">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">2024 Spring 課程w2-2</h2>
+                                <h2 class="post-nav-title">2024 Spring 課程w4</h2>
                             <p class="post-nav-excerpt">2024 Spring 網際內容管理與協同產品設計實習課程教學導引.</p>
                         </section>
                     </a>
