@@ -2,7 +2,7 @@
         <head>
         <title>41023249</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,21 +142,93 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Replit</h1>
-<p><a href="https://replit.com">https://replit.com</a></p>
-<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
-<p dir="auto">On Replit:</p>
-<p dir="auto">.replit: python3 main.py</p>
-<p dir="auto">chmod u+x cms init_replit</p>
-<p dir="auto">./init_replit</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde_site (not needed): git submodule update --init --recursive</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde: pip install flask flask_cors bs4 lxml pelican markdown gevent</p>
-<p dir="auto">password generator: <a href="https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py">https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py</a> </p>
-<p dir="auto"></p>
-<p dir="auto">for IPv6 only Ubuntu:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p<br/><br/>for Replit:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.co<br/>#since Replit works for IPv4, therefore no ProxyCommand setting needed<br/>#ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</p>
-<p></p>
-<p></p>
-<br />cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+    <div id="tipue_search_content">w3 << <a href='w3.html'>Previous</a> <a href='詳細說明.html'>Next</a> >> 詳細說明<br /><h1>第三週協同產品設計實習大綱</h1>
+<h4>1. 善用 GitHub Codespaces 與 Gitpod</h4>
+<ul>
+<li><strong>介紹 GitHub Codespaces</strong></li>
+<li>每月 120 core hours 免費使用</li>
+<li>建議僅在需要轉檔或編輯時啟用，以最佳化使用</li>
+<li><strong>介紹 Gitpod</strong></li>
+<li>與 GitHub Codespaces 類似，使用 Visual Studio Code 網頁介面</li>
+<li>運行個人 cd2024 倉儲的設定</li>
+<li>分組倉儲的 SSH 設定與維護</li>
+</ul>
+<h4>2. 將組員倉儲設為分組倉儲的子模組</h4>
+<ul>
+<li><strong>設定子模組的指令</strong></li>
+<li>在分組倉儲目錄下執行<span> </span><code>git submodule add 組員的個人倉儲網址 組員的學號</code></li>
+<li>範例:<span> </span><code>git submodule add https://github.com/scrum-1/cd2024.git 41023249</code></li>
+<li><strong>子模組的優點</strong></li>
+<li>組員自行管理個人倉儲</li>
+<li>自行決定整合版本</li>
+<li>簡化資料導入分組網站的過程</li>
+</ul>
+<h4>3. LaTeX 轉 PDF 機制</h4>
+<ul>
+<li><strong>LaTeX 文件編輯與轉檔</strong></li>
+<li>利用 xelatex.exe 編譯 .tex 文件</li>
+<li>生成 .pdf 文件</li>
+<li><strong>範例與教學影片</strong></li>
+<li>示範如何在 Windows 環境下編譯 LaTeX 文件</li>
+<li>解決編譯過程中的常見問題</li>
+<li><strong>使用 GitHub Actions 進行自動轉檔</strong></li>
+<li>.github/workflows/main.yml 設定範例</li>
+<li>轉檔目錄結構：latex 目錄與 downloads 目錄</li>
+</ul>
+<h4>4. 啟動期中分組報告的製作</h4>
+<ul>
+<li><strong>分工翻譯與編輯報告</strong></li>
+<li>以 LaTeX 格式分工完成英文與中文翻譯</li>
+<li>在分組網站的 Release 或 downloads 區發布報告</li>
+<li><strong>協同編輯與衝突解決</strong></li>
+<li>.tex 文件的純文字編輯</li>
+<li>多人協同編輯時的衝突解決</li>
+</ul>
+<h4>5. 使用 Replit 維護分組倉儲</h4>
+<ul>
+<li><strong>Replit 環境介紹</strong></li>
+<li>基本操作與維護方法</li>
+<li>.ssh 目錄的管理</li>
+</ul>
+<h4>6. CD2024 期中分組倉儲與網站</h4>
+<ul>
+<li><strong>建立分組網站與倉儲</strong></li>
+<li>使用 Brython 程式語法生成連結內容</li>
+<li>範例程式碼提供</li>
+<li><strong>Brython 程式碼示範</strong></li>
+<li>自動生成分組網站與倉儲的連結</li>
+</ul>
+<h4>7. 期中分組報告範本</h4>
+<ul>
+<li><strong>LaTeX 報告範本</strong></li>
+<li>下載與使用說明</li>
+<li>miktex-portable.7z 與 latex_images_github.7z 下載</li>
+</ul>
+<h4>8. 在電腦教室中的協同設計</h4>
+<ul>
+<li><strong>各組員維護個人與分組倉儲</strong></li>
+<li>利用 Token 或 SSH 授權</li>
+<li>git clone 指令範例</li>
+</ul>
+<h4>9. 其他工具與參考資料</h4>
+<ul>
+<li><strong>OnShape 帳號與 MKCad Library 使用</strong></li>
+<li>網頁設計與產品建模</li>
+<li><strong>CoppeliaSim</strong></li>
+<li>下載與使用說明</li>
+<li>結合可攜程式環境進行機電系統設計與模擬</li>
+</ul>
+<h4>10. 相關連結與資料</h4>
+<ul>
+<li><strong>參考資料</strong></li>
+<li>Odoo PLM 功能與使用介紹</li>
+<li>英文單字查詢工具</li>
+<li>GitHub Actions 配置範例</li>
+<li><strong>完整範例文件與資源</strong></li>
+<li>可攜程式環境下載</li>
+<li>協同報告範本下載</li>
+</ul>
+<br />w3 << <a href='w3.html'>Previous</a> <a href='詳細說明.html'>Next</a> >> 詳細說明</div>
 
     <!-- footer -->
       <div class="container">

@@ -2,7 +2,7 @@
         <head>
         <title>41023249</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,21 +142,69 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Replit</h1>
-<p><a href="https://replit.com">https://replit.com</a></p>
-<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
-<p dir="auto">On Replit:</p>
-<p dir="auto">.replit: python3 main.py</p>
-<p dir="auto">chmod u+x cms init_replit</p>
-<p dir="auto">./init_replit</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde_site (not needed): git submodule update --init --recursive</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde: pip install flask flask_cors bs4 lxml pelican markdown gevent</p>
-<p dir="auto">password generator: <a href="https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py">https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py</a> </p>
-<p dir="auto"></p>
-<p dir="auto">for IPv6 only Ubuntu:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p<br/><br/>for Replit:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.co<br/>#since Replit works for IPv4, therefore no ProxyCommand setting needed<br/>#ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</p>
-<p></p>
-<p></p>
-<br />cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+    <div id="tipue_search_content">第三週協同產品設計實習大綱 << <a href='第三週協同產品設計實習大綱.html'>Previous</a> <a href='w4.html'>Next</a> >> w4<br /><h1>詳細說明</h1>
+<h4>善用 GitHub Codespaces 與 Gitpod</h4>
+<ul>
+<li><strong>介紹 GitHub Codespaces</strong></li>
+<li>GitHub Codespaces 是一個雲端開發環境，允許開發者在瀏覽器中編寫、測試和調試代碼。</li>
+<li>每月 120 core hours 的免費配額允許用戶高效利用資源。</li>
+<li>
+<p>使用策略：僅在需要進行文件轉檔或進行大量編輯時啟用，其他時候使用本地編輯工具。</p>
+</li>
+<li>
+<p><strong>介紹 Gitpod</strong></p>
+</li>
+<li>Gitpod 是類似於 GitHub Codespaces 的工具，使用 Visual Studio Code 的網頁介面。</li>
+<li>用於管理和編輯個人的 cd2024 倉儲。</li>
+<li>分組倉儲需設置 SSH 許可權來進行管理。</li>
+</ul>
+<h4>將組員倉儲設為分組倉儲的子模組</h4>
+<ul>
+<li><strong>設定子模組的指令</strong></li>
+<li>在分組倉儲的根目錄中，運行以下命令來添加子模組：<span> </span><code>sh git submodule add &lt;組員的個人倉儲網址&gt; &lt;組員的學號&gt;</code></li>
+<li>例如：<span> </span><code>sh git submodule add https://github.com/scrum-1/cd2024.git 41023249</code></li>
+<li><strong>子模組的優點</strong></li>
+<li>各組員可以自行管理和更新個人倉儲，無需同步到分組倉儲。</li>
+<li>子模組的獨立性讓組員可以單獨測試和修改自己的代碼。</li>
+<li>簡化資料的整合過程，只需更新子模組即可同步最新內容。</li>
+</ul>
+<h4>LaTeX 轉 PDF 機制</h4>
+<ul>
+<li><strong>LaTeX 文件編輯與轉檔</strong></li>
+<li>LaTeX 是一個基於 TeX 的排版系統，適用於專業文檔和學術論文的編輯。</li>
+<li>在 Windows 環境中，使用 MiKTeX 編譯 LaTeX 文件，生成 PDF 報告。</li>
+<li>主要步驟包括編輯<span> </span><code>.tex</code><span> </span>文件，然後使用<span> </span><code>xelatex.exe</code><span> </span>進行編譯：<span> </span><code>sh xelatex &lt;filename&gt;.tex</code></li>
+<li><strong>範例與教學影片</strong></li>
+<li>教學影片詳細說明如何下載、安裝和使用 MiKTeX。</li>
+<li>解決常見的編譯錯誤和問題。</li>
+<li><strong>使用 GitHub Actions 進行自動轉檔</strong></li>
+<li>配置 GitHub Actions 來自動化 LaTeX 文件的編譯和 PDF 生成。</li>
+<li>範例配置文件<span> </span><code>.github/workflows/main.yml</code><span> </span>可參考：<span> </span><code>yaml name: LaTeX Build on: [push] jobs: build: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - name: Setup LaTeX run: sudo apt-get install -y texlive-full - name: Compile LaTeX run: xelatex main.tex</code></li>
+</ul>
+<h4>啟動期中分組報告的製作</h4>
+<ul>
+<li><strong>分工翻譯與編輯報告</strong></li>
+<li>組員分工完成英文和中文的翻譯與編輯。</li>
+<li>使用 LaTeX 格式撰寫報告，最終生成 PDF 文件。</li>
+<li><strong>協同編輯與衝突解決</strong></li>
+<li>.tex 文件的純文字格式有助於版本控制和衝突解決。</li>
+<li>在 Git 中協同編輯時，可以清楚地看到和解決衝突。</li>
+</ul>
+<h4>使用 Replit 維護分組倉儲</h4>
+<ul>
+<li><strong>Replit 環境介紹</strong></li>
+<li>Replit 是一個在線開發環境，支持多種編程語言和框架。</li>
+<li>可以方便地在瀏覽器中編輯和運行代碼。</li>
+<li>免費帳號的 .ssh 目錄管理和維護需要注意。</li>
+</ul>
+<h4>CD2024 期中分組倉儲與網站</h4>
+<ul>
+<li><strong>建立分組網站與倉儲</strong></li>
+<li>使用 Brython 程式語法生成期中分組倉儲和網站的連結。</li>
+<li>範例程式碼展示如何自動生成連結列表。</li>
+<li><strong>範例程式碼</strong>： ```python from browser import document, html brython_div = document["brython_div1"] div = "a" org = "mdecd2024" midterm = "mid" + div + "g" group_num = 8 for i in range(1,group_num+1): site_url = "https://" + org + ".github.io/</li>
+</ul>
+<br />第三週協同產品設計實習大綱 << <a href='第三週協同產品設計實習大綱.html'>Previous</a> <a href='w4.html'>Next</a> >> w4</div>
 
     <!-- footer -->
       <div class="container">
