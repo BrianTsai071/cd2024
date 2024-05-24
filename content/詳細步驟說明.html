@@ -2,7 +2,7 @@
         <head>
         <title>41023249</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,8 +142,119 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">Latex << <a href='Latex.html'>Previous</a> <a href='w1.html'>Next</a> >> w1<br /><h1>HW</h1>
-<br />Latex << <a href='Latex.html'>Previous</a> <a href='w1.html'>Next</a> >> w1</div>
+    <div id="tipue_search_content">協同產品設計實習第六週詳細大綱 << <a href='協同產品設計實習第六週詳細大綱.html'>Previous</a> <br /><h1>詳細步驟說明</h1>
+<h4>一、協同 NX 零組件繪圖</h4>
+<ol>
+<li><strong>安裝與啟動 NX</strong></li>
+<li>將 NX1872 目錄存入隨身碟</li>
+<li>
+<p>使用 start_USB_nx1872.bat 啟動 NX</p>
+</li>
+<li>
+<p><strong>設置協同環境</strong></p>
+</li>
+<li>新增 temp 目錄用來儲存 NX 的 Syslog 系統狀態檔案</li>
+<li>配置批次檔案啟動 NX</li>
+</ol>
+<h4></h4>
+<h4>二、CoppeliaSim 場景模擬相關檔案格式</h4>
+<ol>
+<li><strong>下載與安裝 CoppeliaSim</strong></li>
+<li>前往 CoppeliaSim 官網下載最新版</li>
+<li>
+<p>安裝軟體並進行基本設置</p>
+</li>
+<li>
+<p><strong>設置模擬場景</strong></p>
+</li>
+<li>建立新場景或載入現有場景</li>
+<li>保存場景檔案，熟悉其檔案格式（如 .ttt）</li>
+<li>
+<p>設置物體、腳本、路徑等模擬參數</p>
+</li>
+<li>
+<p><strong>模擬檔案格式應用</strong></p>
+</li>
+<li>瞭解不同檔案格式在模擬中的應用（如 .obj、.ttt）</li>
+<li>將模擬場景轉換為其他格式，進行跨平台設計</li>
+</ol>
+<h4>三、Github Actions 帶有子模組的 main.yml 設定</h4>
+<ol>
+<li><strong>編輯 main.yml 文件</strong></li>
+<li>
+<p>添加取子模組內容的設定： ```yaml</p>
+<ul>
+<li>name: Initialize submodules run: git submodule update --init --recursive ```</li>
+</ul>
+</li>
+<li>
+<p><strong>完整的 main.yml 文件說明</strong></p>
+</li>
+<li>配置 Github Actions 在推送、拉取請求和手動觸發時運行</li>
+<li>配置<span> </span><code>build</code><span> </span>任務，在 Ubuntu 環境中執行以下步驟：
+<ul>
+<li>檢出代碼</li>
+<li>安裝 texlive 和相關字體</li>
+<li>初始化子模組</li>
+<li>編譯 LaTeX 文件</li>
+<li>標記版本並推送標籤</li>
+<li>創建 Release</li>
+<li>上傳 PDF 報告</li>
+</ul>
+</li>
+</ol>
+<h4>四、協同設計報告編輯與生成</h4>
+<ol>
+<li><strong>編輯 LaTeX 報告</strong></li>
+<li>在 cd_report.tex 中編輯報告內容</li>
+<li>從分組網站中的 latex 目錄中引用組員的 LaTeX 文件</li>
+<li>
+<p>圖片檔案從分組倉儲中的 images 目錄引用</p>
+</li>
+<li>
+<p><strong>生成 PDF 報告</strong></p>
+</li>
+<li>配置 Github Actions 自動編譯 LaTeX 文件生成 PDF 報告</li>
+<li>將生成的 PDF 報告上傳到 Release 區</li>
+</ol>
+<h4>五、分組倉儲與子模組管理</h4>
+<ol>
+<li><strong>取下子模組</strong></li>
+<li>
+<p>使用<span> </span><code>git submodule update --init --recursive</code><span> </span>命令初始化子模組</p>
+</li>
+<li>
+<p><strong>更新學員倉儲內容</strong></p>
+</li>
+<li>定期更新子模組中的內容，確保最新的協同設計資料</li>
+</ol>
+<h4>六、詳細實施步驟</h4>
+<ol>
+<li><strong>協同 NX 零組件繪圖</strong></li>
+<li>將 NX1872 目錄存入隨身碟，使用 start_USB_nx1872.bat 啟動 NX</li>
+<li>
+<p>配置 temp 目錄以儲存 NX 的 Syslog 系統狀態檔案</p>
+</li>
+<li>
+<p><strong>CoppeliaSim 場景模擬</strong></p>
+</li>
+<li>下載並安裝 CoppeliaSim，設置並保存模擬場景</li>
+<li>
+<p>了解不同檔案格式的應用，進行場景設計與轉換</p>
+</li>
+<li>
+<p><strong>Github Actions 設定</strong></p>
+</li>
+<li>編輯 main.yml 文件，添加子模組初始化設定</li>
+<li>
+<p>配置 LaTeX 編譯環境，自動生成並上傳報告</p>
+</li>
+<li>
+<p><strong>報告編輯與生成</strong></p>
+</li>
+<li>在分組倉儲中編輯 LaTeX 報告，使用子模組中的內容</li>
+<li>通過 Github Actions 自動編譯生成 PDF 報告</li>
+</ol><br />協同產品設計實習第六週詳細大綱 << <a href='協同產品設計實習第六週詳細大綱.html'>Previous</a> </div>
 
     <!-- footer -->
       <div class="container">
