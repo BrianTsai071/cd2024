@@ -1512,6 +1512,173 @@ doc["threejsblock"].bind("click", threejsblock.do)
 </li>
 </ol>
 <h1>W7</h1>
+<h2 data-sourcepos="13:1-13:20">協同產品設計實習 - 第七週回顧</h2>
+<h3 data-sourcepos="15:1-15:11">一、課程背景</h3>
+<ul data-sourcepos="16:1-20:37">
+<li data-sourcepos="16:1-20:37"><strong data-sourcepos="16:3-16:17">協同產品設計實習課程</strong>：
+<ul data-sourcepos="17:3-20:37">
+<li data-sourcepos="17:3-17:21">利用網際內容管理系統 (CMS)</li>
+<li data-sourcepos="18:3-18:31">採用 Github Classroom 建立分組倉儲</li>
+<li data-sourcepos="19:3-19:29">使用 Python 執行網頁編輯並轉檔為靜態網頁</li>
+<li data-sourcepos="20:3-20:37">利用 Github Pages 呈現協同產品設計過程的多媒體內容</li>
+</ul>
+</li>
+</ul>
+<h3 data-sourcepos="22:1-22:19">二、內容管理系統 (CMS)</h3>
+<ul data-sourcepos="23:1-27:18">
+<li data-sourcepos="23:1-27:18"><strong data-sourcepos="23:3-23:11">主要工具</strong>：
+<ul data-sourcepos="24:3-27:18">
+<li data-sourcepos="24:3-24:35">cmsimde_site 作為 Github 倉儲的引擎目錄</li>
+<li data-sourcepos="25:3-25:18">Python 執行網頁編輯</li>
+<li data-sourcepos="26:3-26:17">Pelican 管理網誌</li>
+<li data-sourcepos="27:3-27:18">Reveal 管理網際簡報</li>
+</ul>
+</li>
+</ul>
+<h3 data-sourcepos="29:1-29:13">三、網頁編輯方法</h3>
+<ul data-sourcepos="30:1-34:14">
+<li data-sourcepos="30:1-34:14"><strong data-sourcepos="30:3-30:11">四種方法</strong>：
+<ul data-sourcepos="31:3-34:14">
+<li data-sourcepos="31:3-31:11">Replit</li>
+<li data-sourcepos="32:3-32:15">Codespaces</li>
+<li data-sourcepos="33:3-33:11">Gitpod</li>
+<li data-sourcepos="34:3-34:14">Localhost</li>
+</ul>
+</li>
+</ul>
+<h3 data-sourcepos="36:1-36:11">四、協同模式</h3>
+<ol data-sourcepos="37:1-50:22">
+<li data-sourcepos="37:1-40:12"><strong data-sourcepos="37:4-37:17">分組網站內容的協同</strong>：
+<ul data-sourcepos="38:4-40:12">
+<li data-sourcepos="38:4-38:13">章節式網站內容</li>
+<li data-sourcepos="39:4-39:27">網誌內容 (markdown 轉為超文件)</li>
+<li data-sourcepos="40:4-40:12">網際簡報內容</li>
+</ul>
+</li>
+<li data-sourcepos="41:1-42:47"><strong data-sourcepos="41:4-41:17">分組報告內容的協同</strong>：
+<ul data-sourcepos="42:4-42:47">
+<li data-sourcepos="42:4-42:47">使用 Github Actions 與 MikTeX 進行 LaTeX 轉 PDF</li>
+</ul>
+</li>
+<li data-sourcepos="43:1-44:26"><strong data-sourcepos="43:4-43:22">分組產品設計的 PLM 協同</strong>：
+<ul data-sourcepos="44:4-44:26">
+<li data-sourcepos="44:4-44:26">使用 Odoo PLM 模組管理設計過程</li>
+</ul>
+</li>
+<li data-sourcepos="45:1-46:40"><strong data-sourcepos="45:4-45:18">分組零組件設計的協同</strong>：
+<ul data-sourcepos="46:4-46:40">
+<li data-sourcepos="46:4-46:40">使用 Solvespace 和 Siemens NX 進行零組件設計</li>
+</ul>
+</li>
+<li data-sourcepos="47:1-48:25"><strong data-sourcepos="47:4-47:19">分組模擬場景設計的協同</strong>：
+<ul data-sourcepos="48:4-48:25">
+<li data-sourcepos="48:4-48:25">使用 CoppeliaSim 進行模擬</li>
+</ul>
+</li>
+<li data-sourcepos="49:1-50:22"><strong data-sourcepos="49:4-49:19">分組專案簡報設計的協同</strong>：
+<ul data-sourcepos="50:4-50:22">
+<li data-sourcepos="50:4-50:22">使用 Reveal 進行簡報設計</li>
+</ul>
+</li>
+</ol>
+<h3 data-sourcepos="52:1-52:12">五、工具與程式</h3>
+<ul data-sourcepos="53:1-57:26">
+<li data-sourcepos="53:1-55:22"><strong data-sourcepos="53:3-53:18">Python 程式工具</strong>：
+<ul data-sourcepos="54:3-55:22">
+<li data-sourcepos="54:3-54:27">add_to_content_html.py</li>
+<li data-sourcepos="55:3-55:22">generate_pages.py</li>
+</ul>
+</li>
+<li data-sourcepos="56:1-57:26"><strong data-sourcepos="56:3-56:18">Bash Script</strong>：
+<ul data-sourcepos="57:3-57:26">
+<li data-sourcepos="57:3-57:26">um (update submodule)</li>
+</ul>
+</li>
+</ul>
+<h3 data-sourcepos="59:1-59:13">六、協同過程詳解</h3>
+<ol data-sourcepos="60:1-71:28">
+<li data-sourcepos="60:1-62:28"><strong data-sourcepos="60:4-60:17">分組網站內容的協同</strong>：
+<ul data-sourcepos="61:4-62:28">
+<li data-sourcepos="61:4-61:22">每週編寫 markdown 網誌</li>
+<li data-sourcepos="62:4-62:28">使用 Pelican 轉檔至 blog 目錄</li>
+</ul>
+</li>
+<li data-sourcepos="63:1-65:24"><strong data-sourcepos="63:4-63:17">分組報告內容的協同</strong>：
+<ul data-sourcepos="64:4-65:24">
+<li data-sourcepos="64:4-64:21">使用 LaTeX 格式完成報告</li>
+<li data-sourcepos="65:4-65:24">結合 Odoo PLM 管理協同過程</li>
+</ul>
+</li>
+<li data-sourcepos="66:1-67:52"><strong data-sourcepos="66:4-66:18">分組零組件設計的協同</strong>：
+<ul data-sourcepos="67:4-67:52">
+<li data-sourcepos="67:4-67:52">使用 Siemens NX 繪製零件並錄製 NXOpen Python Journal 程式</li>
+</ul>
+</li>
+<li data-sourcepos="68:1-69:37"><strong data-sourcepos="68:4-68:19">分組模擬場景設計的協同</strong>：
+<ul data-sourcepos="69:4-69:37">
+<li data-sourcepos="69:4-69:37">使用 ZMQ Remote API Python 控制模擬場景</li>
+</ul>
+</li>
+<li data-sourcepos="70:1-71:28"><strong data-sourcepos="70:4-70:19">分組專案簡報設計的協同</strong>：
+<ul data-sourcepos="71:4-71:28">
+<li data-sourcepos="71:4-71:28">利用 Markdown 格式內容進行簡報設計</li>
+</ul>
+</li>
+</ol>
+<h3 data-sourcepos="73:1-73:16">七、導入 AI 的流程</h3>
+<ul data-sourcepos="74:1-80:24">
+<li data-sourcepos="74:1-77:13"><strong data-sourcepos="74:3-74:11">使用工具</strong>：
+<ul data-sourcepos="75:3-77:13">
+<li data-sourcepos="75:3-75:16">ChatGPT 3.5</li>
+<li data-sourcepos="76:3-76:15">Gemini Pro</li>
+<li data-sourcepos="77:3-77:13">Claude 3</li>
+</ul>
+</li>
+<li data-sourcepos="78:1-80:24"><strong data-sourcepos="78:3-78:11">應用範例</strong>：
+<ul data-sourcepos="79:3-80:24">
+<li data-sourcepos="79:3-79:27">將 Odoo 參考論文上傳進行翻譯與摘要提取</li>
+<li data-sourcepos="80:3-80:24">利用 AI 工具回答設計與程式相關問題</li>
+</ul>
+</li>
+</ul>
+<h3 data-sourcepos="82:1-82:18">八、Odoo 參考論文摘要</h3>
+<ol data-sourcepos="83:1-96:36">
+<li data-sourcepos="83:1-84:33"><strong data-sourcepos="83:4-83:10">緒論</strong>：
+<ul data-sourcepos="84:4-84:33">
+<li data-sourcepos="84:4-84:33">探討 Odoo 在 PLM 和 MES 整合方面的能力</li>
+</ul>
+</li>
+<li data-sourcepos="85:1-86:26"><strong data-sourcepos="85:4-85:12">理論基礎</strong>：
+<ul data-sourcepos="86:4-86:26">
+<li data-sourcepos="86:4-86:26">PLM、ERP 和 MES 的定義與重點</li>
+</ul>
+</li>
+<li data-sourcepos="87:1-88:13"><strong data-sourcepos="87:4-87:21">PLM 和 MES 的整合</strong>：
+<ul data-sourcepos="88:4-88:13">
+<li data-sourcepos="88:4-88:13">整合目標與方法</li>
+</ul>
+</li>
+<li data-sourcepos="89:1-90:13"><strong data-sourcepos="89:4-89:15">公司和產品介紹</strong>：
+<ul data-sourcepos="90:4-90:13">
+<li data-sourcepos="90:4-90:13">案例公司與產品</li>
+</ul>
+</li>
+<li data-sourcepos="91:1-92:18"><strong data-sourcepos="91:4-91:17">Odoo 軟體介紹</strong>：
+<ul data-sourcepos="92:4-92:18">
+<li data-sourcepos="92:4-92:18">Odoo 概述與製造功能</li>
+</ul>
+</li>
+<li data-sourcepos="93:1-94:31"><strong data-sourcepos="93:4-93:30">Odoo 在 PLM 和 MES 方面的表現</strong>：
+<ul data-sourcepos="94:4-94:31">
+<li data-sourcepos="94:4-94:31">專案管理、產品和制程創建、產品和制程改進、數據查詢</li>
+</ul>
+</li>
+<li data-sourcepos="95:1-96:36"><strong data-sourcepos="95:4-95:10">結論</strong>：
+<ul data-sourcepos="96:4-96:36">
+<li data-sourcepos="96:4-96:36">Odoo 作為小型企業 PLM 和 MES 解決方案的優劣勢</li>
+</ul>
+</li>
+</ol>
 <h1>期末報告</h1>
 <p>期末報告<a href="/downloads/期末報告.pdf" title="期末">/downloads/期末報告.pdf</a></p>
 <section id="wrapper"><footer id="footer"></footer></section>

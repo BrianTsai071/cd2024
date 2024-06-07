@@ -1208,7 +1208,7 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <li>在分組倉儲中編輯 LaTeX 報告，使用子模組中的內容</li>
 <li>通過 Github Actions 自動編譯生成 PDF 報告</li>
 </ol>
-<h1>W6</h1>
+<h2>W6</h2>
 <h3 data-sourcepos="13:1-13:20">協同產品設計實習第六週詳細大綱</h3>
 <hr data-sourcepos="15:1-15:4"/>
 <h4 data-sourcepos="17:1-17:12">一、教學內容</h4>
@@ -1511,7 +1511,7 @@ doc["threejsblock"].bind("click", threejsblock.do)
 </ul>
 </li>
 </ol>
-<h1>W7</h1>
+<h2>W7</h2>
 <h2 data-sourcepos="13:1-13:20">協同產品設計實習 - 第七週回顧</h2>
 <h3 data-sourcepos="15:1-15:11">一、課程背景</h3>
 <ul data-sourcepos="16:1-20:37">
@@ -1679,6 +1679,132 @@ doc["threejsblock"].bind("click", threejsblock.do)
 </ul>
 </li>
 </ol>
+<h2>W10</h2>
+<h2 data-sourcepos="13:1-13:19">協同產品設計實習第十週操作詳解</h2>
+<h3 data-sourcepos="15:1-15:23">任務一: 維護分組倉儲和建立學員網站</h3>
+<h4 data-sourcepos="17:1-17:13">1. 準備工作</h4>
+<ul data-sourcepos="18:1-19:28">
+<li data-sourcepos="18:1-18:19">註冊並登錄 Replit 帳號。</li>
+<li data-sourcepos="19:1-19:28">在 Replit 上創建和維護各班學員的分組倉儲。</li>
+</ul>
+<h4 data-sourcepos="21:1-21:15">2. 初步資料處理</h4>
+<ul data-sourcepos="22:1-23:17">
+<li data-sourcepos="22:1-22:44">從<span> </span><code class="css-1m92mmc">2b.txt</code><span> </span>文件中提取學員的基本資料（學號、GitHub 帳號與組別）。</li>
+<li data-sourcepos="23:1-23:17">將每一行隔開並逐一放入數列。</li>
+</ul>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span ͼ32 css-1okvcqf">with</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2m css-1okvcqf">open</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2e css-1okvcqf">'2b.txt'</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2e css-1okvcqf">'r'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">as</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">file</span><span class="cv2-span css-1okvcqf">:</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">data</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">file</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">readlines</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"><span class="css-9y6172"> </span></span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">students</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ28 css-1okvcqf">[</span><span class="cv2-span ͼ2a css-1okvcqf">line</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">strip</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">split</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">for</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">line</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">in</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">data</span><span class="cv2-span ͼ28 css-1okvcqf">]</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+<h4 data-sourcepos="31:1-31:13">3. 網頁生成</h4>
+<ul data-sourcepos="32:1-34:43">
+<li data-sourcepos="32:1-32:31">利用 for 迴圈生成學員倉儲和網站的 HTML 文件。</li>
+<li data-sourcepos="33:1-33:44">學員倉儲連結範本：<code class="css-1m92mmc">https://github.com/學員帳號/cd2024</code></li>
+<li data-sourcepos="34:1-34:43">學員網站連結範本：<code class="css-1m92mmc">https://學員帳號.github.io/cd2024</code></li>
+</ul>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span ͼ30 css-1okvcqf">&lt;!DOCTYPE html&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">html</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">lang</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"en"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">head</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">meta</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">charset</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"UTF-8"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">meta</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">name</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"viewport"</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">content</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"width=device-width, initial-scale=1.0"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">title</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">2b 學員評分相關網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">title</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">head</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">body</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">h1</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">2b 學員評分相關網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">h1</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">ul</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> {% for student in students %}</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">li</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">href</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"https://github.com/{{student[1]}}/cd2024"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">GitHub 倉儲 - {{student[0]}}</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf"> | </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">href</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"https://{{student[1]}}.github.io/cd2024"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">li</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> {% endfor %}</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">ul</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">body</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">html</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+<h4 data-sourcepos="55:1-55:17">4. 分組倉儲連結生成</h4>
+<ul data-sourcepos="56:1-57:56">
+<li data-sourcepos="56:1-56:56">2b 分組倉儲連結範本：<code class="css-1m92mmc">https://github.com/mdecd2024/2b-midbg組別</code></li>
+<li data-sourcepos="57:1-57:56">2a 分組倉儲連結範本：<code class="css-1m92mmc">https://github.com/mdecd2024/2a-midag組別</code></li>
+</ul>
+<h3 data-sourcepos="59:1-59:25">任務二: 鋼球平衡台 PID 控制與模擬</h3>
+<h4 data-sourcepos="61:1-61:16">1. 下載與閱讀文獻</h4>
+<ul data-sourcepos="62:1-63:23">
+<li data-sourcepos="62:1-62:54">下載<span> </span><code class="css-1m92mmc">cd2024_ball_balancing_platform_control_ref.7z</code>。</li>
+<li data-sourcepos="63:1-63:23">摘要每篇論文的要點並放入個人與分組網誌。</li>
+</ul>
+<h4 data-sourcepos="65:1-65:15">2. 論文要點摘要</h4>
+<ul data-sourcepos="66:1-71:45">
+<li data-sourcepos="66:1-66:39"><strong data-sourcepos="66:3-66:10">論文一</strong>：理論模型與實際搭建的比較，分析控制理論與系統實施的挑戰。</li>
+<li data-sourcepos="67:1-67:42"><strong data-sourcepos="67:3-67:10">論文二</strong>：基於 FPGA 的平行計算 PID 控制器，提高位置調節精度。</li>
+<li data-sourcepos="68:1-68:32"><strong data-sourcepos="68:3-68:10">論文三</strong>：比較三種控制結構，狀態空間觀測器性能最佳。</li>
+<li data-sourcepos="69:1-69:28"><strong data-sourcepos="69:3-69:10">論文四</strong>：低成本教育工具，教授控制理論應用。</li>
+<li data-sourcepos="70:1-70:37"><strong data-sourcepos="70:3-70:10">論文五</strong>：二自由度球體平衡實驗平台，使用步進電機和位置傳感器。</li>
+<li data-sourcepos="71:1-71:45"><strong data-sourcepos="71:3-71:10">論文六</strong>：QUARC 軟體設計二維平台控制，PD 和 PID 控制器性能比較。</li>
+</ul>
+<h4 data-sourcepos="73:1-73:14">3. 模擬與控制</h4>
+<ul data-sourcepos="74:1-76:32">
+<li data-sourcepos="74:1-74:32">分析文獻中的方法，選擇適用於解決鋼球平衡台控制問題的論文。</li>
+<li data-sourcepos="75:1-75:29">在 CoppeliaSim 中繪製零組件並導入模擬。</li>
+<li data-sourcepos="76:1-76:32">使用 PID 控制展示鋼球的 x 和 y 座標運動路徑圖。</li>
+</ul>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span ͼ32 css-1okvcqf">import</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">matplotlib</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2a css-1okvcqf">pyplot</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">as</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">plt</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"><span class="css-9y6172"> </span></span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2c css-1okvcqf"># Example data for x and y coordinates</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">time</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ28 css-1okvcqf">[</span><span class="cv2-span ͼ2o css-1okvcqf">0</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">1</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">2</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">3</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">4</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">5</span><span class="cv2-span ͼ28 css-1okvcqf">]</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">x_coordinates</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ28 css-1okvcqf">[</span><span class="cv2-span ͼ2o css-1okvcqf">0</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">1</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">0</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2t css-1okvcqf">-</span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span ͼ28 css-1okvcqf">]</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">y_coordinates</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ28 css-1okvcqf">[</span><span class="cv2-span ͼ2o css-1okvcqf">0</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2t css-1okvcqf">-</span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2t css-1okvcqf">-</span><span class="cv2-span ͼ2o css-1okvcqf">1</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2t css-1okvcqf">-</span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">0</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2o css-1okvcqf">0.5</span><span class="cv2-span ͼ28 css-1okvcqf">]</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"><span class="css-9y6172"> </span></span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">plot</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2a css-1okvcqf">time</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2a css-1okvcqf">x_coordinates</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2a css-1okvcqf">label</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">'X Coordinates'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">plot</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2a css-1okvcqf">time</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2a css-1okvcqf">y_coordinates</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2a css-1okvcqf">label</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">'Y Coordinates'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">xlabel</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2e css-1okvcqf">'Time (s)'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">ylabel</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2e css-1okvcqf">'Coordinates (m)'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">title</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2e css-1okvcqf">'Ball Position on Platform'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">legend</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">plt</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">show</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+<h3 data-sourcepos="95:1-95:20">任務三: 鋼球平衡台零組件繪圖</h3>
+<h4 data-sourcepos="97:1-97:13">1. 準備工作</h4>
+<ul data-sourcepos="98:1-99:29">
+<li data-sourcepos="98:1-98:48">下載並解壓<span> </span><code class="css-1m92mmc">Solvespace_model_2d_for_cd2024_w6.7z</code>。</li>
+<li data-sourcepos="99:1-99:29">使用 Siemens NX1872.7 繪製零組件。</li>
+</ul>
+<h4 data-sourcepos="101:1-101:13">2. 繪製步驟</h4>
+<ul data-sourcepos="102:1-104:12">
+<li data-sourcepos="102:1-102:21">開啟 Siemens NX1872。</li>
+<li data-sourcepos="103:1-103:28">根據 Solvespace 的尺寸信息繪製零組件。</li>
+<li data-sourcepos="104:1-104:12">將過程錄製為影片。</li>
+</ul>
+<h4 data-sourcepos="106:1-106:13">3. 文件上傳</h4>
+<ul data-sourcepos="107:1-107:24">
+<li data-sourcepos="107:1-107:24">將過程影片和摘要文檔上傳到個人與分組網站。</li>
+</ul>
+<h3 data-sourcepos="109:1-109:10">分組與協作</h3>
+<ul data-sourcepos="110:1-110:35">
+<li data-sourcepos="110:1-110:35">將所有資料和結果整合到分組倉儲中，確保各組員能方便地存取和檢視。</li>
+</ul>
+<h3 data-sourcepos="112:1-112:9">任務總結</h3>
+<ul data-sourcepos="113:1-115:20">
+<li data-sourcepos="113:1-113:23">透過以上操作，完成學員倉儲與網站的建立。</li>
+<li data-sourcepos="114:1-114:19">完成鋼球平衡台的模擬與控制研究。</li>
+<li data-sourcepos="115:1-115:20">繪製鋼球平衡台的零組件並記錄過程。</li>
+</ul>
 <h1>期末報告</h1>
 <p>期末報告<a href="/downloads/期末報告.pdf" title="期末">/downloads/期末報告.pdf</a></p>
 <section id="wrapper"><footer id="footer"></footer></section>

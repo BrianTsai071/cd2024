@@ -2,7 +2,7 @@
         <head>
         <title>41023249</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,8 +142,63 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">詳細步驟說明-1 << <a href='詳細步驟說明-1.html'>Previous</a> <a href='協同產品設計實習第六週詳細大綱-2.html'>Next</a> >> 協同產品設計實習第六週詳細大綱-2<br /><h1>W6</h1>
-<br />詳細步驟說明-1 << <a href='詳細步驟說明-1.html'>Previous</a> <a href='協同產品設計實習第六週詳細大綱-2.html'>Next</a> >> 協同產品設計實習第六週詳細大綱-2</div>
+    <div id="tipue_search_content">協同產品設計實習第十週操作詳解 << <a href='協同產品設計實習第十週操作詳解.html'>Previous</a> <a href='任務二: 鋼球平衡台 PID 控制與模擬.html'>Next</a> >> 任務二: 鋼球平衡台 PID 控制與模擬<br /><h1>任務一: 維護分組倉儲和建立學員網站</h1>
+<h4 data-sourcepos="17:1-17:13">1. 準備工作</h4>
+<ul data-sourcepos="18:1-19:28">
+<li data-sourcepos="18:1-18:19">註冊並登錄 Replit 帳號。</li>
+<li data-sourcepos="19:1-19:28">在 Replit 上創建和維護各班學員的分組倉儲。</li>
+</ul>
+<h4 data-sourcepos="21:1-21:15">2. 初步資料處理</h4>
+<ul data-sourcepos="22:1-23:17">
+<li data-sourcepos="22:1-22:44">從<span> </span><code class="css-1m92mmc">2b.txt</code><span> </span>文件中提取學員的基本資料（學號、GitHub 帳號與組別）。</li>
+<li data-sourcepos="23:1-23:17">將每一行隔開並逐一放入數列。</li>
+</ul>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span ͼ32 css-1okvcqf">with</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2m css-1okvcqf">open</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ2e css-1okvcqf">'2b.txt'</span><span class="cv2-span css-1okvcqf">, </span><span class="cv2-span ͼ2e css-1okvcqf">'r'</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">as</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">file</span><span class="cv2-span css-1okvcqf">:</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">data</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">file</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">readlines</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"><span class="css-9y6172"> </span></span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ2a css-1okvcqf">students</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ28 css-1okvcqf">[</span><span class="cv2-span ͼ2a css-1okvcqf">line</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">strip</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span ͼ2t css-1okvcqf">.</span><span class="cv2-span ͼ2l css-1okvcqf">split</span><span class="cv2-span ͼ27 css-1okvcqf">(</span><span class="cv2-span ͼ27 css-1okvcqf">)</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">for</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">line</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ32 css-1okvcqf">in</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2a css-1okvcqf">data</span><span class="cv2-span ͼ28 css-1okvcqf">]</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+<h4 data-sourcepos="31:1-31:13">3. 網頁生成</h4>
+<ul data-sourcepos="32:1-34:43">
+<li data-sourcepos="32:1-32:31">利用 for 迴圈生成學員倉儲和網站的 HTML 文件。</li>
+<li data-sourcepos="33:1-33:44">學員倉儲連結範本：<code class="css-1m92mmc">https://github.com/學員帳號/cd2024</code></li>
+<li data-sourcepos="34:1-34:43">學員網站連結範本：<code class="css-1m92mmc">https://學員帳號.github.io/cd2024</code></li>
+</ul>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span ͼ30 css-1okvcqf">&lt;!DOCTYPE html&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">html</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">lang</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"en"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">head</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">meta</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">charset</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"UTF-8"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">meta</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">name</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"viewport"</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">content</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"width=device-width, initial-scale=1.0"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">title</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">2b 學員評分相關網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">title</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">head</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">body</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">h1</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">2b 學員評分相關網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">h1</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">ul</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> {% for student in students %}</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">li</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">href</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"https://github.com/{{student[1]}}/cd2024"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">GitHub 倉儲 - {{student[0]}}</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf"> | </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2s css-1okvcqf">href</span><span class="cv2-span ͼ2t css-1okvcqf">=</span><span class="cv2-span ͼ2e css-1okvcqf">"https://{{student[1]}}.github.io/cd2024"</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span css-1okvcqf">網站</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">a</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">li</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> {% endfor %}</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">ul</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">body</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-a1fbvo"><span class="cv2-span ͼ29 css-1okvcqf">&lt;/</span><span class="cv2-span ͼ2z css-1okvcqf">html</span><span class="cv2-span ͼ29 css-1okvcqf">&gt;</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+<h4 data-sourcepos="55:1-55:17">4. 分組倉儲連結生成</h4>
+<ul data-sourcepos="56:1-57:56">
+<li data-sourcepos="56:1-56:56">2b 分組倉儲連結範本：<code class="css-1m92mmc">https://github.com/mdecd2024/2b-midbg組別</code></li>
+<li data-sourcepos="57:1-57:56">2a 分組倉儲連結範本：<code class="css-1m92mmc">https://github.com/mdecd2024/2a-midag組別</code></li>
+</ul>
+<br />協同產品設計實習第十週操作詳解 << <a href='協同產品設計實習第十週操作詳解.html'>Previous</a> <a href='任務二: 鋼球平衡台 PID 控制與模擬.html'>Next</a> >> 任務二: 鋼球平衡台 PID 控制與模擬</div>
 
     <!-- footer -->
       <div class="container">
