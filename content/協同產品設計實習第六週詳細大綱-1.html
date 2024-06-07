@@ -2,6 +2,7 @@
         <head>
         <title>41023249</title>
         <meta charset="utf-8">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -95,6 +96,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -140,4 +142,185 @@ img.add_border {
           </div>
 
         </header>
-    </nav><section><h1>SMap</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li><a href='Latex.html'>Latex</a><li><a href='HW.html'>HW</a><ul><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><ul><li><a href='利用 Codespaces 維護倉儲與網站.html'>利用 Codespaces 維護倉儲與網站</a><li><a href='在近端執行動態網站.html'>在近端執行動態網站</a></li></ul><li><a href='w3.html'>w3</a><ul><li><a href='第三週協同產品設計實習大綱.html'>第三週協同產品設計實習大綱</a><li><a href='詳細說明.html'>詳細說明</a></li></ul><li><a href='w4.html'>w4</a><ul><li><a href='第四週協同產品設計實習詳細大綱.html'>第四週協同產品設計實習詳細大綱</a><li><a href='詳細內容與操作說明.html'>詳細內容與操作說明</a></li></ul><li><a href='W5.html'>W5</a><ul><li><a href='協同產品設計實習第五週詳細大綱.html'>協同產品設計實習第五週詳細大綱</a><li><a href='實施細節與步驟.html'>實施細節與步驟</a></li></ul><li><a href='期中.html'>期中</a><ul><li><a href='協同產品設計實習第六週詳細大綱-1.html'>協同產品設計實習第六週詳細大綱-1</a><li><a href='詳細步驟說明-1.html'>詳細步驟說明-1</a></li></li></ul></ul><li><a href='W6.html'>W6</a><ul><li><a href='協同產品設計實習第六週詳細大綱-2.html'>協同產品設計實習第六週詳細大綱-2</a><ul><li><a href='詳細步驟說明-2.html'>詳細步驟說明-2</a></li></li></ul></ul><li><a href='W7.html'>W7</a><li><a href='期末報告.html'>期末報告</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">期中 << <a href='期中.html'>Previous</a> <a href='詳細步驟說明-1.html'>Next</a> >> 詳細步驟說明-1<br /><h1>協同產品設計實習第六週詳細大綱-1</h1>
+<hr/>
+<h4>一、教學內容</h4>
+<ol>
+<li><strong>協同 NX 零組件繪圖</strong></li>
+<li>NX 零組件繪圖的協同設計步驟與檔案格式</li>
+<li>
+<p>相關設定與操作說明</p>
+</li>
+<li>
+<p><strong>CoppeliaSim 場景模擬相關檔案格式</strong></p>
+</li>
+<li>CoppeliaSim 模擬場景檔案格式</li>
+<li>使用 CoppeliaSim 進行場景模擬的具體步驟與操作</li>
+</ol>
+<h4>二、Github Actions 帶有子模組的 main.yml 設定</h4>
+<ol>
+<li><strong>取子模組內容的 main.yml 設定</strong></li>
+<li>新增取子模組內容的設定部分</li>
+<li>
+<p>完整的 main.yml 範例文件</p>
+</li>
+<li>
+<p><strong>main.yml 文件說明</strong></p>
+</li>
+<li>
+<p>on 設定部分：</p>
+<ul>
+<li>push 到 pdf 分支</li>
+<li>pull request 到 pdf 分支</li>
+<li>workflow_dispatch 觸發</li>
+</ul>
+</li>
+<li>
+<p>jobs 設定部分：</p>
+<ul>
+<li>build:</li>
+<li>使用 ubuntu-latest</li>
+<li>安裝 texlive 及相關字體</li>
+<li>初始化子模組</li>
+<li>測試 LaTeX 編譯</li>
+<li>標記版本並推送標籤</li>
+<li>創建 Release</li>
+<li>上傳 Release 資產</li>
+</ul>
+</li>
+</ol>
+<h4>三、協同設計報告編輯與生成</h4>
+<ol>
+<li><strong>編輯報告</strong></li>
+<li>以 cd_report.tex 為範例編輯 LaTeX 報告</li>
+<li>使用組員分組網站中的 latex 目錄內容</li>
+<li>
+<p>圖片檔案從組員 images 目錄中引用</p>
+</li>
+<li>
+<p><strong>生成 PDF 報告</strong></p>
+</li>
+<li>通過 Github Actions 自動編譯生成 PDF 報告</li>
+<li>上傳生成的報告到 Release 區</li>
+</ol>
+<h4>四、分組倉儲與子模組管理</h4>
+<ol>
+<li><strong>取下子模組</strong></li>
+<li>
+<p>使用<span> </span><code>git submodule update --init --recursive</code><span> </span>初始化子模組</p>
+</li>
+<li>
+<p><strong>更新學員倉儲內容</strong></p>
+</li>
+<li>定期更新學員倉儲中的內容</li>
+</ol>
+<h4>五、教學影片整理與噪音消除</h4>
+<ol>
+<li><strong>影片整理與自評</strong></li>
+<li>搜尋已發布的教學影片</li>
+<li>
+<p>處理影片的噪音問題</p>
+</li>
+<li>
+<p><strong>噪音處理工具與方法</strong></p>
+</li>
+<li>使用 Audacity 與 Openshot 進行噪音消除</li>
+<li>
+<p>輸出處理後的教學影片</p>
+</li>
+<li>
+<p><strong>教學影片列表</strong></p>
+</li>
+<li>cd2024 2a w6 利用 pelicanconf.py 整合各組員的網誌</li>
+</ol>
+<h4>六、詳細實施步驟</h4>
+<ol>
+<li><strong>協同 NX 零組件繪圖</strong></li>
+<li>安裝與啟動 NX 軟體</li>
+<li>設置協同設計環境</li>
+<li>
+<p>使用 temp 目錄存儲系統狀態檔案</p>
+</li>
+<li>
+<p><strong>CoppeliaSim 場景模擬</strong></p>
+</li>
+<li>下載與安裝 CoppeliaSim</li>
+<li>設置模擬場景</li>
+<li>
+<p>將模擬檔案格式應用於場景設計</p>
+</li>
+<li>
+<p><strong>Github Actions 設定</strong></p>
+</li>
+<li>編輯 main.yml 文件</li>
+<li>初始化並更新子模組</li>
+<li>配置 LaTeX 編譯環境</li>
+<li>
+<p>上傳編譯生成的報告</p>
+</li>
+<li>
+<p><strong>報告編輯與生成</strong></p>
+</li>
+<li>在分組倉儲中編輯 LaTeX 報告</li>
+<li>
+<p>通過 Github Actions 自動生成 PDF 報告</p>
+</li>
+<li>
+<p><strong>影片處理</strong></p>
+</li>
+<li>搜尋並整理教學影片</li>
+<li>使用 Audacity 與 Openshot 進行噪音消除</li>
+<li>上傳處理後的教學影片</li>
+</ol>
+<hr/>
+<br />期中 << <a href='期中.html'>Previous</a> <a href='詳細步驟說明-1.html'>Next</a> >> 詳細步驟說明-1</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

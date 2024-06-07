@@ -142,9 +142,151 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">利用 Codespaces 維護倉儲與網站 << <a href='利用 Codespaces 維護倉儲與網站.html'>Previous</a> <a href='w3.html'>Next</a> >> w3<br /><h1>在近端執行動態網站</h1>
-<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfEB1UUQFttEu-jLYpAaflsB85I01JJFdI_HectY6T5rrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=eYLF26">如何利用近端可攜系統維護分組網站</a></p>
-<br />利用 Codespaces 維護倉儲與網站 << <a href='利用 Codespaces 維護倉儲與網站.html'>Previous</a> <a href='w3.html'>Next</a> >> w3</div>
+    <div id="tipue_search_content">協同產品設計實習第六週詳細大綱-2 << <a href='協同產品設計實習第六週詳細大綱-2.html'>Previous</a> <a href='W7.html'>Next</a> >> W7<br /><h1>詳細步驟說明-2</h1>
+<h4 data-sourcepos="112:1-112:19">一、協同 NX 零組件繪圖</h4>
+<ol data-sourcepos="114:1-120:17">
+<li data-sourcepos="114:1-116:35">
+<p data-sourcepos="114:4-114:16"><strong data-sourcepos="114:4-114:16">安裝與啟動 NX</strong></p>
+<ul data-sourcepos="115:4-116:35">
+<li data-sourcepos="115:4-115:22">將 NX1872 目錄存入隨身碟</li>
+<li data-sourcepos="116:4-116:35">使用 start_USB_nx1872.bat 啟動 NX</li>
+</ul>
+</li>
+<li data-sourcepos="118:1-120:17">
+<p data-sourcepos="118:4-118:14"><strong data-sourcepos="118:4-118:14">設置協同環境</strong></p>
+<ul data-sourcepos="119:4-120:17">
+<li data-sourcepos="119:4-119:39">新增 temp 目錄用來儲存 NX 的 Syslog 系統狀態檔案</li>
+<li data-sourcepos="120:4-120:17">配置批次檔案啟動 NX</li>
+</ul>
+</li>
+</ol>
+<h4 data-sourcepos="122:1-122:5"></h4>
+<h4 data-sourcepos="124:1-124:30">二、CoppeliaSim 場景模擬相關檔案格式</h4>
+<ol data-sourcepos="126:1-137:26">
+<li data-sourcepos="126:1-128:17">
+<p data-sourcepos="126:4-126:25"><strong data-sourcepos="126:4-126:25">下載與安裝 CoppeliaSim</strong></p>
+<ul data-sourcepos="127:4-128:17">
+<li data-sourcepos="127:4-127:28">前往 CoppeliaSim 官網下載最新版</li>
+<li data-sourcepos="128:4-128:17">安裝軟體並進行基本設置</li>
+</ul>
+</li>
+<li data-sourcepos="130:1-133:21">
+<p data-sourcepos="130:4-130:14"><strong data-sourcepos="130:4-130:14">設置模擬場景</strong></p>
+<ul data-sourcepos="131:4-133:21">
+<li data-sourcepos="131:4-131:18">建立新場景或載入現有場景</li>
+<li data-sourcepos="132:4-132:28">保存場景檔案，熟悉其檔案格式（如 .ttt）</li>
+<li data-sourcepos="133:4-133:21">設置物體、腳本、路徑等模擬參數</li>
+</ul>
+</li>
+<li data-sourcepos="135:1-137:26">
+<p data-sourcepos="135:4-135:16"><strong data-sourcepos="135:4-135:16">模擬檔案格式應用</strong></p>
+<ul data-sourcepos="136:4-137:26">
+<li data-sourcepos="136:4-136:34">瞭解不同檔案格式在模擬中的應用（如 .obj、.ttt）</li>
+<li data-sourcepos="137:4-137:26">將模擬場景轉換為其他格式，進行跨平台設計</li>
+</ul>
+</li>
+</ol>
+<h4 data-sourcepos="139:1-139:41">三、Github Actions 帶有子模組的 main.yml 設定</h4>
+<ol data-sourcepos="141:1-157:17">
+<li data-sourcepos="141:1-146:9">
+<p data-sourcepos="141:4-141:22"><strong data-sourcepos="141:4-141:22">編輯 main.yml 文件</strong></p>
+<ul data-sourcepos="142:4-146:9">
+<li data-sourcepos="142:4-146:9">添加取子模組內容的設定：
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf">- </span><span class="cv2-span ͼ2q css-1okvcqf">name</span><span class="cv2-span css-1okvcqf">: Initialize submodules</span></div>
+<div class="css-a1fbvo"><span class="cv2-span css-1okvcqf"> </span><span class="cv2-span ͼ2q css-1okvcqf">run</span><span class="cv2-span css-1okvcqf">: git submodule update --init --recursive</span></div>
+<div class="css-1ath0al">
+<div class="css-ggepfv"><button aria-label="Copy code to clipboard" class="css-11qfkor" type="button"><svg aria-hidden="true" class="css-492dz9" fill="currentColor" height="16" preserveaspectratio="xMidYMin" viewbox="0 0 24 24" width="16"><path clip-rule="evenodd" d="M9.055 2.055A2.75 2.75 0 0 1 11 1.25h9A2.75 2.75 0 0 1 22.75 4v9A2.75 2.75 0 0 1 20 15.75h-1a.75.75 0 0 1 0-1.5h1A1.25 1.25 0 0 0 21.25 13V4A1.25 1.25 0 0 0 20 2.75h-9A1.25 1.25 0 0 0 9.75 4v1a.75.75 0 0 1-1.5 0V4c0-.73.29-1.429.805-1.945ZM1.25 11A2.75 2.75 0 0 1 4 8.25h9A2.75 2.75 0 0 1 15.75 11v9A2.75 2.75 0 0 1 13 22.75H4A2.75 2.75 0 0 1 1.25 20v-9ZM4 9.75c-.69 0-1.25.56-1.25 1.25v9c0 .69.56 1.25 1.25 1.25h9c.69 0 1.25-.56 1.25-1.25v-9c0-.69-.56-1.25-1.25-1.25H4Z" fill-rule="evenodd"></path></svg></button></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li data-sourcepos="148:1-157:17">
+<p data-sourcepos="148:4-148:25"><strong data-sourcepos="148:4-148:25">完整的 main.yml 文件說明</strong></p>
+<ul data-sourcepos="149:4-157:17">
+<li data-sourcepos="149:4-149:40">配置 Github Actions 在推送、拉取請求和手動觸發時運行</li>
+<li data-sourcepos="150:4-157:17">配置<span> </span><code class="css-1m92mmc">build</code><span> </span>任務，在 Ubuntu 環境中執行以下步驟：
+<ul data-sourcepos="151:6-157:17">
+<li data-sourcepos="151:6-151:12">檢出代碼</li>
+<li data-sourcepos="152:6-152:24">安裝 texlive 和相關字體</li>
+<li data-sourcepos="153:6-153:14">初始化子模組</li>
+<li data-sourcepos="154:6-154:19">編譯 LaTeX 文件</li>
+<li data-sourcepos="155:6-155:17">標記版本並推送標籤</li>
+<li data-sourcepos="156:6-156:18">創建 Release</li>
+<li data-sourcepos="157:6-157:17">上傳 PDF 報告</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 data-sourcepos="159:1-159:19">四、協同設計報告編輯與生成</h4>
+<ol data-sourcepos="161:1-168:30">
+<li data-sourcepos="161:1-164:29">
+<p data-sourcepos="161:4-161:19"><strong data-sourcepos="161:4-161:19">編輯 LaTeX 報告</strong></p>
+<ul data-sourcepos="162:4-164:29">
+<li data-sourcepos="162:4-162:29">在 cd_report.tex 中編輯報告內容</li>
+<li data-sourcepos="163:4-163:37">從分組網站中的 latex 目錄中引用組員的 LaTeX 文件</li>
+<li data-sourcepos="164:4-164:29">圖片檔案從分組倉儲中的 images 目錄引用</li>
+</ul>
+</li>
+<li data-sourcepos="166:1-168:30">
+<p data-sourcepos="166:4-166:17"><strong data-sourcepos="166:4-166:17">生成 PDF 報告</strong></p>
+<ul data-sourcepos="167:4-168:30">
+<li data-sourcepos="167:4-167:46">配置 Github Actions 自動編譯 LaTeX 文件生成 PDF 報告</li>
+<li data-sourcepos="168:4-168:30">將生成的 PDF 報告上傳到 Release 區</li>
+</ul>
+</li>
+</ol>
+<h4 data-sourcepos="170:1-170:18">五、分組倉儲與子模組管理</h4>
+<ol data-sourcepos="172:1-176:29">
+<li data-sourcepos="172:1-173:59">
+<p data-sourcepos="172:4-172:13"><strong data-sourcepos="172:4-172:13">取下子模組</strong></p>
+<ul data-sourcepos="173:4-173:59">
+<li data-sourcepos="173:4-173:59">使用<span> </span><code class="css-1m92mmc">git submodule update --init --recursive</code><span> </span>命令初始化子模組</li>
+</ul>
+</li>
+<li data-sourcepos="175:1-176:29">
+<p data-sourcepos="175:4-175:16"><strong data-sourcepos="175:4-175:16">更新學員倉儲內容</strong></p>
+<ul data-sourcepos="176:4-176:29">
+<li data-sourcepos="176:4-176:29">定期更新子模組中的內容，確保最新的協同設計資料</li>
+</ul>
+</li>
+</ol>
+<h4 data-sourcepos="178:1-178:14">六、詳細實施步驟</h4>
+<ol data-sourcepos="180:1-194:37">
+<li data-sourcepos="180:1-182:38">
+<p data-sourcepos="180:4-180:19"><strong data-sourcepos="180:4-180:19">協同 NX 零組件繪圖</strong></p>
+<ul data-sourcepos="181:4-182:38">
+<li data-sourcepos="181:4-181:52">將 NX1872 目錄存入隨身碟，使用 start_USB_nx1872.bat 啟動 NX</li>
+<li data-sourcepos="182:4-182:38">配置 temp 目錄以儲存 NX 的 Syslog 系統狀態檔案</li>
+</ul>
+</li>
+<li data-sourcepos="184:1-186:27">
+<p data-sourcepos="184:4-184:24"><strong data-sourcepos="184:4-184:24">CoppeliaSim 場景模擬</strong></p>
+<ul data-sourcepos="185:4-186:27">
+<li data-sourcepos="185:4-185:33">下載並安裝 CoppeliaSim，設置並保存模擬場景</li>
+<li data-sourcepos="186:4-186:27">了解不同檔案格式的應用，進行場景設計與轉換</li>
+</ul>
+</li>
+<li data-sourcepos="188:1-190:29">
+<p data-sourcepos="188:4-188:25"><strong data-sourcepos="188:4-188:25">Github Actions 設定</strong></p>
+<ul data-sourcepos="189:4-190:29">
+<li data-sourcepos="189:4-189:31">編輯 main.yml 文件，添加子模組初始化設定</li>
+<li data-sourcepos="190:4-190:29">配置 LaTeX 編譯環境，自動生成並上傳報告</li>
+</ul>
+</li>
+<li data-sourcepos="192:1-194:37">
+<p data-sourcepos="192:4-192:15"><strong data-sourcepos="192:4-192:15">報告編輯與生成</strong></p>
+<ul data-sourcepos="193:4-194:37">
+<li data-sourcepos="193:4-193:33">在分組倉儲中編輯 LaTeX 報告，使用子模組中的內容</li>
+<li data-sourcepos="194:4-194:37">通過 Github Actions 自動編譯生成 PDF 報告</li>
+</ul>
+</li>
+</ol>
+<br />協同產品設計實習第六週詳細大綱-2 << <a href='協同產品設計實習第六週詳細大綱-2.html'>Previous</a> <a href='W7.html'>Next</a> >> W7</div>
 
     <!-- footer -->
       <div class="container">
