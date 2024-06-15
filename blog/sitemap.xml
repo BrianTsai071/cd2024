@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2024-05-24T08:22:00-00:00</lastmod>
+<lastmod>2024-06-15T06:18:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2024-05-24T08:22:00-00:00</lastmod>
+<lastmod>2024-06-15T06:18:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2024-05-24T08:22:00-00:00</lastmod>
+<lastmod>2024-06-15T06:18:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2024-05-24T08:22:00-00:00</lastmod>
+<lastmod>2024-06-15T06:18:12-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./pages/about/</loc>
 <lastmod>2024-03-29T09:11:24+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./2024-Spring-w17-blog-tutorial.html</loc>
+<lastmod>2024-06-15T06:10:15+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -144,6 +151,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./category/w17.html</loc>
+<lastmod>2024-06-15T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./category/w2-1.html</loc>
 <lastmod>2024-05-17T07:15:18+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -194,21 +208,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./tag/wang-zhi-bian-xie.html</loc>
-<lastmod>2024-05-24T08:21:43+08:06</lastmod>
+<lastmod>2024-06-15T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/pelican.html</loc>
-<lastmod>2024-05-24T08:21:43+08:06</lastmod>
+<lastmod>2024-06-15T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/41023249.html</loc>
-<lastmod>2024-05-24T08:21:43+08:06</lastmod>
+<lastmod>2024-06-15T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
