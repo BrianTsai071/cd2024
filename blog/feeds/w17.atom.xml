@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - w17</title><link href="./" rel="alternate"></link><link href="./feeds/w17.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T14:00:42+08:00</updated><entry><title>2024 Spring 期末</title><link href="./2024-Spring-w17-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T11:00:00+08:00</published><updated>2024-06-20T14:00:42+08:00</updated><author><name>41023249</name></author><id>tag:None,2024-06-15:./2024-Spring-w17-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - w17</title><link href="./" rel="alternate"></link><link href="./feeds/w17.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T14:08:16+08:00</updated><entry><title>2024 Spring 期末</title><link href="./2024-Spring-w17-blog-tutorial.html" rel="alternate"></link><published>2024-06-15T11:00:00+08:00</published><updated>2024-06-20T14:08:16+08:00</updated><author><name>41023249</name></author><id>tag:None,2024-06-15:./2024-Spring-w17-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 
@@ -9,6 +9,7 @@
 &lt;p&gt;項目二
 在NX上面組裝因為比較少用的關係，所以用的時候比較不習慣，但在嘗試過幾次之後，有比較順手。&lt;/p&gt;
 &lt;p&gt;&lt;a href="[https://briantsai071.github.io/cd2024/content/%E9%A0%85%E7%9B%AE2.html]"&gt;項目二&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;項目三&lt;/p&gt;
-&lt;p&gt;[項目三] :[https://briantsai071.github.io/cd2024/content/%E9%A0%85%E7%9B%AE3.html]
-[項目三]:&lt;/p&gt;</content><category term="w17"></category><category term="網誌編寫"></category><category term="pelican"></category></entry></feed>
+&lt;p&gt;項目三
+再讓機器人作動時，因為聯軸器再放置的時候就放反了，所以一開始進去，移動都是相反的，最後一步一步除錯完成
+[項目三] :[https://briantsai071.github.io/cd2024/content/%E9%A0%85%E7%9B%AE3.html]
+[項目三] :&lt;/p&gt;</content><category term="w17"></category><category term="網誌編寫"></category><category term="pelican"></category></entry></feed>
